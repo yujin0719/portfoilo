@@ -267,7 +267,7 @@ p {
     padding: 20px;
 }
 
-/* Works */
+/*Works */
 .work__categories{
     margin: 40px;
 }
@@ -313,7 +313,7 @@ p {
     justify-content: center;
     align-content: center;
     width: 200px;
-    height: 200px;
+    height: 250px;
     margin: 2px;
     background-color: var(--color-light-white);
 }
@@ -352,4 +352,41 @@ p {
     margin-left: -12px;
     margin-top: 8px;
     background-color: var(--color-dark-white);
+}
+
+
+/* Award */
+#awards{
+    background-color: var(--color-light-white);
+}
+.awards {
+    margin: 40px;
+}
+.award {
+    display: flex;
+    margin: 32px 0;
+}
+.award__img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.award__img:nth-child(odd){
+    margin-right: 40px;
+}
+.award__img:nth-child(even){
+    margin-left: 40px;
+}
+.award__info{
+    width: 100%;
+    padding: 18px;
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
+}
+.award__info p{
+    color: var(--color-light-grey);
+}
+.award__info .day{
+    font-size: var(--font-micro);
+    color: var(--color-pink);
 }
