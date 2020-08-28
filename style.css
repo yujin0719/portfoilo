@@ -4,15 +4,15 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #fe918d;
-    --colod-dark-pink: #ff6863;
+    --color-pink: #F7C5C5;
+    --colod-dark-pink: #F27979;
     --color-black: #4d4d4d;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-blue: #73aace;
-    --color-yellow: #fff7d1;
-    --color-orange: #feb546;
+    --color-blue: #B66A6C;
+    --color-yellow: #FDE3D2;
+    --color-orange: #F89E9E;
     --color-black: #000000;
     
 
@@ -92,12 +92,19 @@ p {
 
 /* Navbar */
 #navbar {
+    width:100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
-    align-items: center; 
+    background-color: transparent;
+    align-items: center;  
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animiation-duration) ease-in-out;
+}
+#navbar.navbar--dark {
+    background-color: var(--color-orange);
+    padding: 8px;
 }
 .navbar__logo {
     font-size: var(--font-medium);
@@ -138,6 +145,7 @@ p {
     /* center/cover 반응형으로 바꿔주는 것 */
     background: url('img/home-background.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 .home__avatar {
