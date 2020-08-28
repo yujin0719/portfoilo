@@ -30,6 +30,12 @@ navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 });
 
+document.addEventListener('scroll',() => {
+    if(navbarMenu.classList[1] && window.scrollY > navbarHeight){
+        navbarMenu.classList.remove('open');
+    }
+});
+
 // Handle click on "contact me" button on home
 const contactMe = document.querySelector('.home__contact');
 contactMe.addEventListener('click',(event)=> {
