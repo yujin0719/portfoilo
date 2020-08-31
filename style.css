@@ -4,15 +4,15 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #F7C5C5;
-    --colod-dark-pink: #F27979;
+    --color-light-blue: #368ABF;
+    --color-blue: #044D8C;
+    --color-dark-blue: #033473;
     --color-black: #4d4d4d;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-blue: #B66A6C;
-    --color-yellow: #FDE3D2;
-    --color-orange: #F89E9E;
+    --color-beige: #D9D0BF;
+    --color-brown: #BF9075;
     --color-black: #000000;
     
 
@@ -104,7 +104,7 @@ p {
     z-index: 1;
 }
 #navbar.navbar--dark {
-    background-color: var(--colod-dark-pink);
+    background-color: var(--color-dark-blue);
     padding: 16px;
 }
 .navbar__logo {
@@ -112,8 +112,8 @@ p {
     font-weight: var(--weight-semi-bold);
 }
 .navbar__logo img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
 }
 .navbar__menu {
     display: flex;
@@ -127,7 +127,7 @@ p {
 }
 .navbar__menu__item:hover {
     border: 1px solid var(--color-white);
-    background-color: var(--colod-dark-pink);
+    background-color: var(--color-dark-blue);
     border-radius: var(--size-border-radius);
 } 
 
@@ -169,7 +169,8 @@ p {
     border-radius: var(--size-border-radius);
 }
 .home__contact:hover{
-    background-color: var(--colod-dark-pink);
+    background-color: var(--color-beige);
+    color: var(--color-blue);
 }
 
 /* Section common */
@@ -204,7 +205,7 @@ p {
     transition: all var(--animiation-duration) ease;
 }
 .major__icon:hover i{
-    color: var(--color-pink);
+    color: var(--color-brown);
     transform: rotate(-30deg) scale(1.1);
 }
 .major__title,
@@ -242,7 +243,7 @@ p {
 
 /* Skill */
 #skills {
-    background-color: var(--color-yellow);
+    background-color: var(--color-beige);
 }
 .skillset {
     display: flex;
@@ -273,7 +274,7 @@ p {
 .skill__value{
     width: 70%;
     height: 3px;
-    background-color: var(--color-orange);
+    background-color: var(--color-light-blue);
 }
 
 .skillset__right{
@@ -302,7 +303,7 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     color: var(--color-white);
 }
 .category__btn.selected .category__count,
@@ -311,7 +312,7 @@ p {
     top: 5px;
 }
 .category__count{
-    background-color:  var(--color-orange);
+    background-color:  var(--color-light-blue);
     border-radius: 50%;
     color: var(--color-white);
     width: 24px;
@@ -372,7 +373,7 @@ p {
     transform: translateY(0px);
 }
 .project__description h3 {
-    color: var(--color-orange);
+    color: var(--color-light-blue);
 }
 .project__description h3:after {
     content: '';
@@ -420,12 +421,12 @@ p {
 }
 .award__info .day{
     font-size: var(--font-micro);
-    color: var(--color-pink);
+    color: var(--color-blue);
 }
 
 /* Contact */
 #contact {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
 }
 .contact__title,
 .contact__email,
@@ -441,7 +442,7 @@ p {
 }
 .contact__links i:hover{
     transform: scale(1.1);
-    color: var(--color-yellow);
+    color: var(--color-beige);
     transition: all var(--animiation-duration) ease-in;
 }
 
@@ -452,7 +453,7 @@ p {
     right: 50px;
     font-size: 50px;
     background-color: transparent;
-    color: var(--colod-dark-pink);
+    color: var(--color-dark-blue);
     opacity: 0;
     pointer-events: none;
     transition: all 300ms ease-in;
@@ -480,7 +481,7 @@ p {
     #navbar{
         flex-direction: column;
         align-items: flex-start;
-        background-color: var(--colod-dark-pink);
+        background-color: var(--color-dark-blue);
     }
     .navbar__menu{
         flex-direction: column;
